@@ -27,7 +27,7 @@ $(function(){
 
 		$(".modal").animate({
 			"top": topPlacement
-		}, 500);
+		}, 1500);
 	}
 
 	function closeModal(){
