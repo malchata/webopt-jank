@@ -558,7 +558,7 @@ div.modal,
 div.statusModal,
 div.loader{
 	position: absolute;
-	transform: translateY(-125%);
+	transform: translateY(-150%);
 	transition: transform .5s;
 	left: 50%;
 	margin-top: 0;
