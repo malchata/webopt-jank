@@ -559,6 +559,11 @@ div.statusModal,
 div.loader{
 	position: fixed;
 	top: -350%;
+	left: 50%;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: -155px;
 	width: 310px;
 	z-index: 1001;
 	border-top: 5px solid #c40a0a;
