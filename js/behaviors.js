@@ -22,12 +22,11 @@ $(function(){
 	}
 
 	function openModal(){
-		window.scroll(0, 0);
 		var topPlacement = $(window).width() > 500 ? "10%" : 0;
 
 		$(".modal").animate({
 			"top": topPlacement
-		}, 1500);
+		}, 500);
 	}
 
 	function closeModal(){
