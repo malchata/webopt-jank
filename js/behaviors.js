@@ -1,5 +1,10 @@
 $(function(){
 	function openModal(){
+		window.scroll(0, 0);
+
+		// Turn on the page fader
+		$(".pageFade").show();
+
 		var topPlacement = $(window).width() > 500 ? "10%" : 0;
 
 		$(".modal").animate({
@@ -30,9 +35,6 @@ $(function(){
 	$(function(){
 		// Modal open
 		$("#schedule").click(function(){
-			// Turn on the page fader
-			$(".pageFade").show();
-
 			// Change body visibility
 			$("body").addClass("locked");
 
