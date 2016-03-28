@@ -1,26 +1,4 @@
 $(function(){
-	function positionModal(leftOnly){
-		$(".modal, .statusModal").each(function(){
-			var leftPlacement = ((($("body").width() / 2) - ($(this).width() / 2)) / 16) + "rem";
-
-			$(this).css({
-				left: leftPlacement
-			});
-		});
-
-		if(leftOnly !== true){
-			if($("body").hasClass("locked")){
-				$(".modal, .statusModal").each(function(){
-					var topPlacement = $(window).width() > 500 ? "10%" : 0;
-
-					$(this).css({
-						top: topPlacement
-					});
-				});
-			}
-		}
-	}
-
 	function openModal(){
 		var topPlacement = $(window).width() > 500 ? "10%" : 0;
 
@@ -50,12 +28,6 @@ $(function(){
 	}
 
 	$(function(){
-		// Position the modal at page load
-		positionModal();
-
-		// Modal placement in response to window resize
-		$(window).resize(positionModal);
-
 		// Modal open
 		$("#schedule").click(function(){
 			// Turn on the page fader
@@ -63,9 +35,6 @@ $(function(){
 
 			// Change body visibility
 			$("body").addClass("locked");
-
-			// Position modal
-			positionModal(true);
 
 			// Open Modal
 			openModal();
@@ -143,6 +112,4 @@ $(function(){
 			}
 		});
 	});
-
-	window.onorientationchange = positionModal;
 });
