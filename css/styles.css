@@ -558,7 +558,7 @@ div.modal,
 div.statusModal,
 div.loader{
 	position: absolute;
-	top: -350%;
+	top: -150%;
 	left: 50%;
 	margin-top: 0;
 	margin-right: 0;
